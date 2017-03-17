@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Memory Game</string>
+    <string name="text_number_memory">NUMBER MEMORY</string>
+    <string name="text_color_memory">COLOR MEMORY</string>
+    <string name="text_picture_memory">PICTURE MEMORY</string>
+
+    <string name="text_play">PLAY</string>
+    <string name="text_help">HELP</string>
+    <string name="text_upload_score">SAVE SCORE</string>
+    <string name="text_bang_thanh_tich">BANG THANH TICH</string>
+    <string name="text_game_over">GAME OVER!</string>
+    <string name="text_again">AGAIN ?</string>
+    <string name="text_quit">QUIT</string>
+    <string name="text_next">NEXT</string>
+    <string name="text_level_passed">LEVEL PASSED</string>
+    <string name="text_continue">CONTINUE ?</string>
+    <string name="text_lost_connection_internet">Your internet connection has been lost</string>
+    <string name="text_create_user">CREATE</string>
+    <string name="text_missing_username">Enter Username</string>
+    <string name="text_huong_dan">HƯỚNG DẪN</string>
+    <string name="text_content_huong_dan">\t\tTìm ô giống nhau đòi hỏi người chơi phải lật, tìm những cặp số bằng nhau đang được dấu dưới những màn chơi. Sau đó người chơi phải nhớ vị trí để lật 2 ô đó lên.\n\t\tGame giúp người chơi rèn luyện trí nhớ chính xác vị trí từng cặp. </string>
+</resources>

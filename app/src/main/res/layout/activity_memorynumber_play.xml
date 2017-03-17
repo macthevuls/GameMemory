@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_app">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/controlPanel"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/txt_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_point"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/cellPanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:splitMotionEvents="false" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/controlPanel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/img_btn_showall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/show_all_btn" />
+
+        <TextView
+            android:id="@+id/txt_timer"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_highscore"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/img_btn_reset"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/reset" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_blur_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/boder_rectangle_black"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/layout_gameover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boder_rectangle_black_white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_dialog"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@mipmap/cry_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_game_over"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_dialog_title_1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_again"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_dialog_title_2" />
+
+
+            <Button
+                android:id="@+id/btn_yes"
+                android:layout_width="@dimen/bg_btn_dialog_size_w"
+                android:layout_height="@dimen/bg_btn_dialog_size_h"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/state_bg_btn"
+                android:text="YES"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_bg_btn_dialog"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_no"
+                android:layout_width="@dimen/bg_btn_dialog_size_w"
+                android:layout_height="@dimen/bg_btn_dialog_size_h"
+                android:background="@drawable/state_bg_btn"
+                android:text="NO"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_bg_btn_dialog"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_passlevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boder_rectangle_black_white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_dialog"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@mipmap/smile_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_level_passed"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_dialog_title_1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_continue"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_dialog_title_2" />
+
+            <Button
+                android:id="@+id/btn_quit"
+                android:layout_width="@dimen/bg_btn_dialog_size_w"
+                android:layout_height="@dimen/bg_btn_dialog_size_h"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/state_bg_btn"
+                android:text="@string/text_quit"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_bg_btn_dialog"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_next_level"
+                android:layout_width="@dimen/bg_btn_dialog_size_w"
+                android:layout_height="@dimen/bg_btn_dialog_size_h"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/state_bg_btn"
+                android:text="@string/text_next"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_bg_btn_dialog"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_upload_score"
+                android:layout_width="@dimen/bg_btn_dialog_size_w"
+                android:layout_height="@dimen/bg_btn_dialog_size_h"
+                android:background="@drawable/state_bg_btn"
+                android:text="@string/text_upload_score"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_bg_btn_dialog"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

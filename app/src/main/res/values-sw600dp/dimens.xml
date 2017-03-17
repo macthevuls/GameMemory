@@ -1,0 +1,21 @@
+<resources>
+    <dimen name="size_hirabutton">130dp</dimen>
+    <dimen name="bg_button_size_w">400dp</dimen>
+    <dimen name="bg_button_size_h">176dp</dimen>
+    <dimen name="bg_button_text_size">30sp</dimen>
+    <dimen name="text_size_dialog_title_1">38sp</dimen>
+    <dimen name="text_size_dialog_title_2">32sp</dimen>
+    <dimen name="text_size_bg_btn_dialog">30sp</dimen>
+    <dimen name="text_size_point">45sp</dimen>
+    <dimen name="button_back_size">90dp</dimen>
+    <dimen name="bg_btn_dialog_size_w">250dp</dimen>
+    <dimen name="bg_btn_dialog_size_h">110dp</dimen>
+    <dimen name="padding_dialog">75dp</dimen>
+    <dimen name="edittext_username_size_w">380dp</dimen>
+    <dimen name="button_createuser_size_w">250dp</dimen>
+    <dimen name="button_createuser_size_h">110dp</dimen>
+    <dimen name="text_size_edittext_createuser">37sp</dimen>
+    <dimen name="text_size_button_createuser">35sp</dimen>
+    <dimen name="text_size_help_title">45sp</dimen>
+    <dimen name="text_size_help_content">35sp</dimen>
+</resources>
